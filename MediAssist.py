@@ -6,8 +6,8 @@ from langchain_core.prompts import ChatPromptTemplate
 import os
 
 # 配置 NVIDIA 的API密钥
-os.environ["NVIDIA_API_KEY"] = "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"
-pytesseract.pytesseract.tesseract_cmd = r'D:\Tesseract-OCR\tesseract.exe'
+os.environ["NVIDIA_API_KEY"] = "nvapi-..."  # 根据自己申请的密钥配置
+pytesseract.pytesseract.tesseract_cmd = r'....\Tesseract-OCR\tesseract.exe'  # 根据自己的安装路径配置
 
 # 1. 从图像中提取文本（包含数学公式）
 def extract_medicine_from_image(image) -> str:

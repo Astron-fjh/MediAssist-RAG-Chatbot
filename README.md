@@ -16,9 +16,9 @@
 
 - **数据构建过程**：数据主要来源于药单图像，通过OCR技术提取文本信息。使用Tesseract OCR工具进行图像文字识别，并结合中文语言包优化识别效果。将提取的文本数据作为输入，传入大模型进行分析和生成对话。
 
-### 2.4 实施步骤
+### 2.3 实施步骤
 
-#### 2.4.1 环境搭建
+#### 2.3.1 环境搭建
 
 1. **开发环境**：使用Python作为主要开发语言，依赖库包括`pytesseract`用于OCR，`gradio`用于创建前端界面，`langchain`用于模型集成。
 
@@ -59,7 +59,7 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 
    ![image-20240818175736627](https://cdn.jsdelivr.net/gh/xiaodiao188/blog-img@img/img/202408181757927.png)
 
-#### 2.4.2 代码实现
+#### 2.3.2 代码实现
 
 1. **导入工具包**
 
